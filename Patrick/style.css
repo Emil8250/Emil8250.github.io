@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+}
+
+h1 {
+    font-family: constantia,georgia,serif;
+    font-size: 36pt;
+    text-align: center;
+    line-height: 4em;
+    color: #ccc;
+}
+
+h2 {
+    font-family: candara,verdana,sans-serif;
+    font-size: 48pt;
+    text-align: center;
+    color: #ccc;
+}
+
+.shop {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-family: candara,verdana,sans-serif;
+    font-size: 24pt;
+    color: #ccc;
+}
+
+.shop:visited {
+    color: #66bc46;
+}
+
+.yes {
+    color: #66bc46;
+}
+
+.no {
+    color: #f63a2d;
+}
+
+.hidden {
+    display: none;
+}
+
+.konami {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Er det Patricks fødselsdag?</title>
+<link rel="icon" type="image/png" href="patrick.png"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script>
+
+function isBirthday() {
+    var d = new Date();
+    var elem = document.getElementById("answer");
+    if (d.getDate() === 31 && d.getMonth() === 9) {
+        elem.innerHTML = "Ja";
+        elem.className = "yes";
+    } else {
+        elem.innerHTML = "Nej";
+        elem.className = "no";
+    }
+}
+
+
+function yay() {
+    var container = document.getElementById("yay");
+    var d = new Date();
+    var img = document.createElement("img");
+    img.onload = function(e) {
+        container.appendChild(e.target);
+    }
+    if (d.getDay() == 5) {
+        img.setAttribute("src","herd2.png");
+        img.setAttribute("width","60%");
+    } else {
+        img.setAttribute("src","saddash.png");
+        img.setAttribute("width","30%");
+    }
+    img.className = "konami";
+}
+
+</script>
+</head>
+<body onLoad="isBirthday();">
+
+<h1>Er det Patricks fødselsdag?</h1>
+
+<h2 id="answer" class="no"></h2>
+
+</body>
+</html>

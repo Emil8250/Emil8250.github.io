@@ -11,9 +11,13 @@
 function isBirthday() {
     var d = new Date();
     var elem = document.getElementById("answer");
+
     if (d.getDate() === 31 && d.getMonth() === 9) {
         elem.innerHTML = "Ja";
         elem.className = "yes";
+    } else if (d.getDate() === 16 && d.getMonth() === 4) {
+        elem.innerHTML = "Nej, men det er Nissens";
+        elem.className = "no";
     } else {
         elem.innerHTML = "Nej";
         elem.className = "no";
